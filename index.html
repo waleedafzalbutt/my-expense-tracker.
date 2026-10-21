@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#153b32">
+<title>My Expense Tracker</title>
+<link rel="manifest" href="./manifest.json">
+
+<style>
+:root {
+  --green: #153b32;
+  --bg: #f4f7f5;
+  --border: #e0e8e3;
+  --muted: #68766f;
+  --red: #c0392b;
+}
+* { box-sizing: border-box; }
+body {
+  margin: 0;
+  padding: 14px;
+  font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+  background: var(--bg);
+  color: #20352d;
+}
+main { max-width: 760px; margin: auto; }
+header { padding: 8px 2px; }
+h1 { font-size: 27px; margin: 0 0 5px; }
+h2 { font-size: 18px; margin: 0 0 14px; }
+p { color: var(--muted); }
+.card, .stat {
+  background: white;
+  border: 1px solid var(--border);
+  border-radius: 15px;
+  padding: 16px;
+  margin-bottom: 14px;
+}
+.balance {
+  background: var(--green);
+  color: white;
+  border-radius: 16px;
+  padding: 22px;
+  margin-bottom: 14px;
+}
+.balance p { color: #dcebe2; margin: 0 0 8px; }
+.balance strong { font-size: 29px; overflow-wrap: anywhere; }
+.stats {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+}
+.stat span { display: block; color: var(--muted); font-size: 13px; }
+.stat strong { display: block; margin-top: 7px; font-size: 18px; overflow-wrap: anywhere; }
+.income { color: #
